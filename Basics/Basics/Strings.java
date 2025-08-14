@@ -6,13 +6,42 @@
   String pool -> a special memory area inside the heap.
 
   Use case of String pool:
-    -> identical(Same) string values are stored only once
-    -> if 2 different variables have the same literal value, they point to the same object
-    -> helps optimize memory usage
+  -> identical(Same) string values are stored only once
+  -> if 2 different variables have the same literal value, they point to the same object
+  -> helps optimize memory usage
 
   Comparison of strings:
-    1. ==         -> checks if reference variables are pointing to the same object
-    2. .equals()  -> checks if the values of both strings are the same
+  1. ==         -> checks if reference variables are pointing to the same object
+  2. .equals()  -> checks if the values of both strings are the same
+
+  formated string can be use diffrent specifiers like %s, %d, etc.
+  we can use with like System.out.printf("Hello %placeholde", "value for placeholder");
+
+  Concating in strings:
+   case 1: adding Char + char -> this case will converted in asssci value and sum of both will be returned
+    -> 'a' + 'b' -> 195 = 'c'
+
+    case 2: adding char + int -> this will convert char into assci value and add the int, sum of both will be returned
+    -> 'a' + 3 => 100 
+
+    case 3: adding "string" + "string" -> do simple concatination
+    -> "ab" + "cd" => "abcd"
+
+    case 4: adding "string" + "int" -> when int concat with string that int will converted through it's 
+    wrapper class Integer that will toString() -> it will return string so it will like "string" + "int"
+    -> a + 1 -> int to Integer -> toString(1) -> "1" hence => "a" + "1" -> a1
+
+    general scenario -> string + any obj -> tostring() will be call on that object -> concat & return 
+    the result
+
+    hence if string + any obj => result will be string
+
+    to use of + operator 
+    + -> only the operator in java is overloaded for purpose of concating with string 
+    1 it will only works for primitives
+    2 to use it for concat there should be one string with any type of obj
+    -> arr + arr -> not correct
+    -> arr + " " + arr -> correct
 */
 
 public class Strings {
