@@ -42,6 +42,13 @@
     2 to use it for concat there should be one string with any type of obj
     -> arr + arr -> not correct
     -> arr + " " + arr -> correct
+
+    StringBuilder:
+    -> in Java is a mutable sequence of characters that lets you create and modify strings 
+        without creating new string objects every time you change the text.
+
+    -> It’s in the java.lang package and is faster than String for repeated modifications like appending, 
+       inserting, deleting, or replacing characters.
 */
 
 public class Strings {

@@ -31,6 +31,10 @@
     A top-level class has no outer class to belong to. So static has no meaning there — 
     it’s only valid for members of another class.
 
+ Reason static methods does not supports overriding
+ -> Static methods belong to the class, not the object.
+ -> They are resolved at compile time using the reference type, not at runtime.
+ -> Overriding requires runtime polymorphism, where the actual object type decides which method to run.
 
 */
 
