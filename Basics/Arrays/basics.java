@@ -1,6 +1,6 @@
 /* 
 
- Theory : in java arays may be continue may be not it depends on JVM as per JLS
+ Theory : in java arrays may be continue may be not it depends on JVM as per JLS
 
  Arrays -> Collection of data types 
  all values in arrays should be of same datatype

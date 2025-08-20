@@ -15,8 +15,9 @@
 
  step 1 -> make the constructor private so it can be called via that class only 
  step 2 ->  Declare one class variable as private 
- step 3 -> create one static which will check if there is object created it will and return that, 
-           if object is created already return that only  
+ step 3 -> create one static method which will check if there is object created or not,
+           if not it will create it and return it
+           if object is created already then return existing once 
 
  Singleton means -> One object + Controlled access to that single instance.
 

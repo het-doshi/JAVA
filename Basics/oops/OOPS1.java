@@ -43,7 +43,7 @@
  How new object is created 
  Before initialization, the reference variable of an object has the default value null
 
- Syntax for creating object -> ClassName referenceVariable = new ClassName();
+ Syntax for creating object -> ClassName referenceVariable = new ConstructorOfClass();
 
  Work of the new Keyword:
  1. Dynamically allocates memory at runtime in the heap for the object.
