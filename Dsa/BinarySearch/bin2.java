@@ -1,0 +1,2 @@
+public class bin2 {
+}
