@@ -8,7 +8,7 @@ public class bin1 {
     // else return the mid
     // loops over return not found
 
-    public static int BinarySearch(int target, int [] arr)
+    public static int BinaryAscending(int target, int [] arr)
     {
         int start = 0;
         int end = arr.length - 1;
@@ -37,7 +37,7 @@ public class bin1 {
     public static void main(String[] args) {
 
         int [] arr = {11,25,10,20,50,60,70};
-        int ans = BinarySearch(55,arr);
+        int ans = BinaryAscending(55,arr);
         System.out.println("at index"+" "+ans);
     }
 }
