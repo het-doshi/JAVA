@@ -1,14 +1,8 @@
-public class bin1 {
+public class problem1 {
 
-    // simple binary search works on sorted array
-    // start initially at 0 index at start of array
-    // end at last element of array
-    // if target < mid -> end = mid - 1   start remains unchanged
-    // if target > mid -> start = mid + 1 end remains unchanged
-    // else return the mid
-    // loops over return not found
+    // Statement : need to find the element which is greater or equal to the target
 
-    public static int BinaryAscending(int target, int [] arr)
+    public  static int BinarySearch(int target,int[] arr)
     {
         int start = 0;
         int end = arr.length - 1;
@@ -31,13 +25,14 @@ public class bin1 {
             }
         }
 
-        return  -1;
+        return  start;
     }
 
     public static void main(String[] args) {
-
         int [] arr = {11,25,10,20,50,60,70};
-        int ans = BinaryAscending(55,arr);
+        int ans = BinarySearch(55,arr);
         System.out.println("at index"+" "+ans);
     }
+
 }
+
