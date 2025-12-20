@@ -33,7 +33,6 @@ public class problem4 {
 
     public static void main(String[] args) {
         int [] arr = {11,15,20,30,50,60,70,80,20,10,5,1};
-
         int ans = findPeakElement(arr);
         System.out.println(ans);
     }
